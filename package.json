@@ -1,0 +1,16 @@
+{
+  "name": "eyetestgame",
+  "version": "1.0.0",
+  "description": "A simple game to test eyes.",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "forever server.js"
+  },
+  "author": "sudhin",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "forever": "^0.15.3"
+  }
+}

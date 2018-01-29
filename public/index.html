@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Eye-Test">
+    <meta property="og:image" content="https://commons.wikimedia.org/wiki/File:Eye-Blue.png">
+    <meta name="description" content="Eye-Test is a simple color game to test eyes.">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1 height=device-height">
+    <title>Eye-Test</title>
+    <link rel="icon" type="image/png" href="./img/Eye-Blue.png" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/utils.js" charset="utf-8"></script>
+    <script src="./js/actionPerformer.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="titleBlock">
+        <img id='optionButton' src="./img/option.png">
+        <h4 id="title">eye<span style="color:lightsteelblue">~</span>test</h4>
+        <hr class="hori_line1"></hr>
+      </div>
+      <div class="centerBlock">
+        <div class="optionBlock" id="optionBlock">
+          <h2 id='aboutTitle'>eye~test®</h2><br><br>
+          About us <br>....................................................................<br><br>
+          Developers: Sudhin, Sreenadh, Divya<br>
+          <div class="optionButtons"></div>
+          <div class="hintBlock">
+            <div class="hintContentBlock" id='hintContent'></div>
+          </div>
+        </div>
+        <div class="boardAndButtons">
+          <div class="colorNameBlock">
+            <div class="colorName"><h1 id="colorName"></h1></div>
+          </div>
+          <div class="tableAndScoreBlock">
+            <div class="gridBlock">
+              <div class="tableBlock" id="tableBlock">
+              </div>
+              <div class="buttonBlock">
+                <div class="buttonBlockLeft">
+                  <img id='startButton' src="./img/next.png">
+                  <img id='restartButton' src="./img/reload.png">
+                  <img id='hint' src="./img/instruction.png">
+                </div>
+              </div>
+            </div>
+            <div class="scoreAndTimerBlock">
+              <div class="timerBlock" id=timerBlock>
+                <img id='timerLogo' src="./img/timer.png">
+              </div>
+              <div class="scoreTitleBlock" id=scoreTitle>Score</div>
+              <div class="scoreBlock" id=scoreValue>0</div>
+              <div class="highscoreBlock" id="overlay"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
