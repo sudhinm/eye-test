@@ -4,18 +4,18 @@ class Game{
     this.timer=undefined;
     this.score=0;
     this.oddCellId=undefined;
-    this.gridSize=undefined;
+    this.gridSize=2;
   }
   getOddCellId(){
-    return this.oddCellID;
+    return this.oddCellId;
   }
   updateOddCellId(cellId){
-    return this.oddCellId=cellId;
+    this.oddCellId=cellId;
   }
   getGridSize(size){
     return this.gridSize;
   }
-  incrementGridSize=function(){
+  incrementGridSize(){
     return this.gridSize++;
   };
   getRemainingTime(){
@@ -30,7 +30,7 @@ class Game{
   decrementTimer(){
     this.countDown--;
   }
-  isGameOver:function(){
+  isGameOver(){
     return true;
   }
 };

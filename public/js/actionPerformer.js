@@ -1,7 +1,7 @@
 let timer;
 let score,cellId=0;
 let gridSize=2;
-let countDown=30;
+let countDown=90;
 let randomCellId;
 
 const startGame=function(){
@@ -41,10 +41,13 @@ const createTable=function(tableBlock){
   table.style['border-collapse']='collapse';
   table.style.height='350px';
   table.style.width='350px';
+
   drawGrid(gridSize,table);
   tableBlock.appendChild(table);
+
   let randomColor=getRandomColor();
   table.style['background-color']=randomColor[0];
+  
   randomCellId=`${Math.ceil(Math.random()*(gridSize*gridSize-1))}`;
   let randomCell=document.getElementById(randomCellId);
   randomCell.style['background-color']=randomColor[1];
@@ -93,7 +96,7 @@ const getCellSize=function(size){
 
 const hintButtonAction=function(hintButton){
   let hintContent=document.getElementById('hintContent');
-  hintContent.innerHTML=`<span style="color:rgb(45, 131, 245);font-size:40px">Instructions</span><br>Click on the odd color block. 30 seconds is the time limit!<br>~~~Good Luck~~~`;
+  hintContent.innerHTML=`<span style="color:rgb(45, 131, 245);font-size:40px">Instructions</span><br>Click on the odd color block.30 seconds is the time limit!<br>~~~Good Luck~~~`;
   hintContent.style.visibility="visible";
   setTimeout(function(){
     hintContent.style.visibility="hidden";
